@@ -1,0 +1,17 @@
+@import "./common/variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $RobotoFont;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 100px auto 0 auto;
+  padding: 50px;
+  border: 1px solid $primaryDark;
+}

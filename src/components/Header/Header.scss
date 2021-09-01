@@ -1,0 +1,28 @@
+@import "../../common/variables.scss";
+
+.header {
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    max-height: 100px;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__links {
+    a {
+      margin-right: 20px;
+      display: inline-block;
+      color: $primaryDark;
+      font-size: 1.5rem;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+}
