@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ProductsContextProvider from "./global/ProductsContext";
+import UserContextProvider from "./global/UserContext";
 import "./default.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -9,7 +11,11 @@ import reportWebVitals from "./reportWebVitals";
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <ProductsContextProvider>
+        <UserContextProvider>
+          <App />
+        </UserContextProvider>
+      </ProductsContextProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

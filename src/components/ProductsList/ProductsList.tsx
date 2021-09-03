@@ -12,6 +12,7 @@ const ProductsList: FC<IProductsList> = () => {
     <div className="product-list">
       <div className="container">
         <div className="row">
+          {products && <h1>Our Products</h1>}
           {products?.map((product: any) => (
             <Product key={product.ProductID} {...product} />
           ))}

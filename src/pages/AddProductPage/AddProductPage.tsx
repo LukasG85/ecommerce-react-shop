@@ -61,7 +61,6 @@ const AddProductPage: FC<IAddProductPage> = () => {
                 setProductPrice("");
                 setProductImage(null);
                 setError("");
-                //  document.querySelector("input[name='product-image']").value = "";
               })
               .catch((err) => setError(err.message));
           });

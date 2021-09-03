@@ -7,6 +7,10 @@
   font-family: $RobotoFont;
 }
 
+body {
+  background: $primaryGray;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
