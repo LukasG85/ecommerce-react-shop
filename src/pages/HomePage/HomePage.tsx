@@ -8,7 +8,6 @@ const HomePage: FC<IHomePage> = () => {
   return (
     <div>
       <Layout>
-        Home
         <ProductsList />
       </Layout>
     </div>
