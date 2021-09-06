@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import RegistrationPage from "./pages/RegistrationPage/RegistrationPage";
 import AddProductPage from "./pages/AddProductPage/AddProductPage";
+import CartPage from "./pages/CartPage/CartPage";
 
 function App() {
   const { user } = useContext<any>(UserContext);
@@ -24,6 +25,7 @@ function App() {
           render={() => (user ? <Redirect to="/" /> : <LoginPage />)}
         />
         <Route path="/add-product" component={AddProductPage} />
+        <Route path="/cart" component={CartPage} />
       </Switch>
     </div>
   );

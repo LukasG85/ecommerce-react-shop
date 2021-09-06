@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ProductsContextProvider from "./global/ProductsContext";
 import UserContextProvider from "./global/UserContext";
+import CartContextProvider from "./global/CartContext";
 import "./default.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -13,7 +14,9 @@ ReactDOM.render(
     <Router>
       <ProductsContextProvider>
         <UserContextProvider>
-          <App />
+          <CartContextProvider>
+            <App />
+          </CartContextProvider>
         </UserContextProvider>
       </ProductsContextProvider>
     </Router>

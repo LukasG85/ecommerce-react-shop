@@ -34,7 +34,7 @@ export const Header: FC<IHeader> = () => {
           ) : (
             <div>
               <Link to="/add-product">Add Product</Link>
-              <Link to="/">
+              <Link to="/cart">
                 <Icon icon={cart}></Icon>
               </Link>
               <button onClick={handleLogOut}>Logout</button>
